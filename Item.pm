@@ -22,6 +22,10 @@ has id => (
 	is => 'ro',
 );
 
+has image => (
+	is => 'ro',
+);
+
 has title => (
 	is => 'ro',
 );
@@ -41,6 +45,9 @@ sub BUILD {
 
 	# Check id.
 	check_number($self, 'id');
+
+	# Check image.
+	# XXX relative path or url.
 
 	# Check title.
 	check_required($self, 'title');
