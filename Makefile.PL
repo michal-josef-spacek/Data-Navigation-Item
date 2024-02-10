@@ -19,6 +19,7 @@ readme_from 'Item.pm';
 recursive_author_tests('xt');
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.09;
+requires 'Mo::utils::CSS' => 0.02;
 requires 'Mo::utils::URI' => 0;
 requires 'perl' => '5.8.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Navigation-Item/issues';

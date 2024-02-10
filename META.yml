@@ -24,6 +24,7 @@ no_index:
 requires:
   Mo: 0
   Mo::utils: 0.09
+  Mo::utils::CSS: 0.02
   Mo::utils::URI: 0
   perl: 5.8.0
 resources:
