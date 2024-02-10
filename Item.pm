@@ -54,6 +54,7 @@ sub BUILD {
 	check_length($self, 'title', 100);
 
 	# Check url.
+	# XXX relative url
 	check_url($self, 'url');
 
 	return;
