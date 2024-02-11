@@ -10,7 +10,7 @@ use Mo::utils::URI qw(check_url);
 
 our $VERSION = 0.01;
 
-has css_class => (
+has class => (
 	is => 'ro',
 );
 
@@ -37,8 +37,8 @@ has url => (
 sub BUILD {
 	my $self = shift;
 
-	# Check CSS class.
-	check_css_class($self, 'css_class');
+	# Check class.
+	check_css_class($self, 'class');
 
 	# Check desc.
 	check_length($self, 'desc', 1000);
