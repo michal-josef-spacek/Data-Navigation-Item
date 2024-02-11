@@ -6,7 +6,7 @@ use warnings;
 use Mo qw(build is);
 use Mo::utils 0.09 qw(check_length check_number check_required);
 use Mo::utils::CSS 0.02 qw(check_css_class);
-use Mo::utils::URI qw(check_url);
+use Mo::utils::URI qw(check_location);
 
 our $VERSION = 0.01;
 
@@ -26,11 +26,11 @@ has image => (
 	is => 'ro',
 );
 
-has title => (
+has location => (
 	is => 'ro',
 );
 
-has url => (
+has title => (
 	is => 'ro',
 );
 
@@ -47,15 +47,15 @@ sub BUILD {
 	check_number($self, 'id');
 
 	# Check image.
-	# XXX relative path or url.
+	# XXX check image.
+	check_location($self, 'image');
+
+	# Check location.
+	check_location($self, 'location');
 
 	# Check title.
 	check_required($self, 'title');
 	check_length($self, 'title', 100);
-
-	# Check url.
-	# XXX relative url
-	check_url($self, 'url');
 
 	return;
 }
