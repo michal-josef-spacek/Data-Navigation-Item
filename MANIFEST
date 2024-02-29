@@ -18,5 +18,8 @@ META.yml
 README
 t/Data-Navigation-Item/01-use.t
 t/Data-Navigation-Item/02-version.t
+t/Data-Navigation-Item/03-new.t
+t/Data-Navigation-Item/04-class.t
+t/Data-Navigation-Item/05-desc.t
 xt/Data-Navigation-Item/01-pod_coverage.t
 xt/Data-Navigation-Item/02-pod.t
