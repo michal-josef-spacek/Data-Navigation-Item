@@ -4,7 +4,7 @@ use warnings;
 use Data::Navigation::Item;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
 use Test::NoWarnings;
 
 # Test.
@@ -30,4 +30,15 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'title' is required.\n",
 	"Parameter 'title' is required.");
+clean();
+
+# Test.
+eval {
+	Data::Navigation::Item->new(
+		'id' => 'bad',
+		'title' => 'Title',
+	);
+};
+is($EVAL_ERROR, "Parameter 'id' must be a number.\n",
+	"Parameter 'id' must be a number.");
 clean();
