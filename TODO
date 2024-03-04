@@ -2,7 +2,8 @@ TODO
 ====
 3. Add checking of image.
 Via Mo::utils::URI::? for check location suffix.
-4.
+4. Doc link to Tags::HTML object, which is using it.
+5.
 
 Applied
 =======
