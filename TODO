@@ -1,6 +1,5 @@
 TODO
 ====
-1. Add doc.
 3. Add checking of image.
 Via Mo::utils::URI::? for check location suffix.
 4.
@@ -8,4 +7,7 @@ Via Mo::utils::URI::? for check location suffix.
 Applied
 =======
 2. Add tests.
+OK [20240304] skim
+
+1. Add doc.
 OK [20240304] skim
